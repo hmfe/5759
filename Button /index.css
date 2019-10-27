@@ -1,0 +1,38 @@
+.container {
+  width: 800px;
+  max-width: 100%;
+  margin: 50px auto;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+button {
+  padding: 2rem 1rem;
+  cursor: pointer;
+  background: #f2a54d;
+  border: 2px solid grey;
+  box-sizing: border-box;
+  font-size: 2rem;
+  font-weight: 800;
+  position: relative;
+}
+button::after {
+  content: "";
+  background-color: white;
+  padding: 25px 45px;
+  border-radius: 50%;
+  margin-left: 7px;
+  position: relative;
+  top: 0px;
+  left: 6px;
+}
+button::before {
+  content: "\2715";
+  position: absolute;
+  top: 22%;
+  left: 69%;
+  z-index: 1;
+  font-size: 46px;
+  font-weight: bold;
+}
